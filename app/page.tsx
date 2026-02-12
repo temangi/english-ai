@@ -6,15 +6,15 @@ export default function Home() {
   const { user } = useTelegram();
 
   return (
-    <div>
+    <main style={{ padding: "20px" }}>
       {user ? (
         <>
           <h1>Hello, {user.first_name} 👋</h1>
-          <p>Let’s practice English today!</p>
+          <p>Welcome to Talkora AI</p>
         </>
       ) : (
-        <p>Loading...</p>
+        <h1>Loading...</h1>
       )}
-    </div>
+    </main>
   );
 }
